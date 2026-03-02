@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Magic Coffee Art</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #d4af37 0%, #e8c547 100%);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            color: #8b2e2e;
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .gallery-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            margin: 20px 0;
+        }
+        
+        .footer {
+            background: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .gallery-content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Galerie</h1>
+        </div>
+        
+        <div class="gallery-content">
+            <img src="assets/gallery-image.jpg" alt="Magic Coffee Art Gallery" class="gallery-image">
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2026 Magic Coffee Art SRL. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
